@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+body main {
+  max-width: 60%;
+  height: 100vh;
+}
+body main .logo {
+  padding: 4em 0 2em 0;
+}
+body main > h1 {
+  padding: 15px;
+  font-size: 30px;
+  color: hsl(209, 33%, 12%);
+}
+body main > h1 span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+body main > p {
+  color: hsl(209, 33%, 12%);
+  padding-bottom: 20px;
+}
+body main .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body main .input input {
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid hsl(0, 0%, 59%);
+  width: 60%;
+}
+body main .input input::-moz-placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  color: hsl(0, 0%, 59%);
+}
+body main .input input::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  color: hsl(0, 0%, 59%);
+}
+body main .input button {
+  padding: 12px 40px;
+  border-radius: 20px;
+  border: 1px solid hsl(223, 87%, 63%);
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+body main .input button:hover {
+  background-color: hsla(223, 87%, 63%, 0.668);
+  cursor: pointer;
+}
+body main .illustration {
+  padding: 2em 0em 0em 0em;
+  width: 100%;
+  height: 350px;
+}
+body main .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 680px) {
+  body main .input {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body main .illustration {
+    padding-top: 0;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body main .input > input {
+    width: 100%;
+  }
+  body main .illustration {
+    padding-top: 0;
+    height: 150px;
+  }
+}/*# sourceMappingURL=styles.css.map */
